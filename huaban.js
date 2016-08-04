@@ -22,6 +22,7 @@ var pageUrls = [];
 for (var _i = 1; _i < 4; _i++) {
     pageUrls.push(baseUrl + '?&page=' + _i);
 }
+
 console.info('pageUrls-->>>',pageUrls[0]);
 
 app.get('/', function (req, res, next) {
