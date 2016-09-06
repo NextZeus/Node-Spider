@@ -16,7 +16,6 @@ var c = new Crawler({
         var urls = $('#list a');
         // console.log(urls)
 
-
         current_book.title = $('#maininfo h1').text()
         current_book.author = $('#info p').eq(0).text()
         current_book.update_time = $('#info p').eq(2).text()
@@ -25,7 +24,7 @@ var c = new Crawler({
         current_book.chapters = [];
 
         for(var i = 0; i< urls.length; i++){
-            var url = urls[i]
+            var url = urls[i];
 
             var _url = $(url).attr('href')+"";
             var num = _url.replace('.html','');
